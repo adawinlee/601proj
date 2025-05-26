@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
     <header>
         Navigation
     </header>
-    
-    <main>
-        <h1>Contact</h1>
+
+    <main id="fullpage">
+        <h1>Contact Me</h1>
+        
+        <form id="web-form">
+            <!-- For text inputs, validation will occur on blur -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" onblur="">
+            <span class="feedback" id="firstErr"></span>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" onblur="">
+            <span class="feedback" id="lastErr"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" onblur="">
+            <span class="feedback" id="emailErr"></span>
+
+            <!-- Clicking button will validate the fields -->
+            <button type="button" onclick="">Submit</button>
+        </form>
+
+        <!-- Display error messages after clicking submit -->
+        <div id="error-msg" style="display: none;">Error(s):
+            <ul>
+                <li class="err" id="errFirst">First name must have at least 2 alphabetical characters.</li>
+                <li class="err" id="errLast">Last name must have at least 2 alphabetical characters.</li>
+                <li class="err" id="errEmail">Please enter a valid email.</li>
+            </ul>
+        </div>
+        <!-- If there are no errors, JS will hide the form and show success message -->
+        <p id="submit-success"></p>
     </main>
 
     <footer></footer>
