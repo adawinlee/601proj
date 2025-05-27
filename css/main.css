@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+h1 {
+    font-family: 'Roboto Serif', 'serif';
+}
+
+header {
+    background-color: lightseagreen;
+    height: 300px;
+}
+
+main {
+    background-color: pink;
+    padding: 25px;
+    width: 100%;
+}
+
+#title-container {
+    position: fixed;
+    background-color: rgba(78, 48, 117, 0.5);
+}
+
+#sidebar-bg {
+    position: fixed;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(78, 48, 117, 0.5);
+    z-index: 2;
+}
+
+#content-wrapper {
+    display: flex;
+}
+
+aside {
+    background-color: antiquewhite;
+    padding: 30px;
+    width: 45%;
+    text-align: right;
+}
