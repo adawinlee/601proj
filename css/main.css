@@ -1,10 +1,13 @@
 body {
     margin: 0;
     font-family: 'Roboto', 'sans-serif';
+    background-image: url("https://csszengarden.com/221/mid-century-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
 }
 
 #title-container {
-    background-color: rgba(78, 48, 117, 0.5);
+    background-color: rgb(250, 235, 215, 0.4);
     position: relative;
 }
 
@@ -26,26 +29,14 @@ main {
     padding: 25px;
 }
 
-#sidebar-bg {
-    position: fixed;
-    width: 45%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(78, 48, 117, 0.5);
-    z-index: 2;
-}
-
-#content-wrapper {
+#grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 3fr 3fr;
 }
 
 aside {
-    background-color: antiquewhite;
+    background-color: rgb(250, 235, 215);
     padding: 30px;
     text-align: right;
 }
