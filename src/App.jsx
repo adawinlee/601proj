@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home'
 import About from './pages/About'
+import Resume from './pages/Resume'
+import Interests from './pages/Interests'
+import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 
 function App() {
@@ -10,23 +12,27 @@ function App() {
 		<BrowserRouter>
 			<div id="grid-wrapper">
 				<div id="title-container">
-					<h1>Biography</h1>
+					<h1>Portfolio</h1>
 				</div>
 
 				<div id="empty-div"></div>
 
 				<aside> 
-					<h2>Navigation</h2>
-					<ul>
-						<li><Link to="/">Home</Link></li>
-						<li><Link to="/about">About</Link></li>
+					<h2 id="navhead">Navigation</h2>
+					<ul id="navbar">
+						<li><Link to="/">About</Link></li>
+						<li><Link to="/resume">Resume</Link></li>
+						<li><Link to="/interests">Interests</Link></li>
+						<li><Link to="/gallery">Gallery</Link></li>
 						<li><Link to="/contact">Contact</Link></li>
 					</ul>
 				</aside>
 
 				<Routes>
-					<Route exact path="/" element={<Home/>}/>
-					<Route path="/about" element={<About/>}/>
+					<Route exact path="/" element={<About/>}/>
+					<Route path="/resume" element={<Resume/>}/>
+					<Route path="/interests" element={<Interests/>}/>
+					<Route path="/gallery" element={<Gallery/>}/>
 					<Route path="/contact" element={<Contact/>}/>
 				</Routes>
 			</div>

@@ -1,10 +1,10 @@
 import React from "react";
 
-const Home = () => {
+const Gallery = () => {
     return (
         <main>
-            <h2>Home</h2>
-            <p>This is the home page.</p>
+            <h2>Gallery</h2>
+            <p>This is the gallery page.</p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -16,4 +16,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Gallery;
