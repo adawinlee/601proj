@@ -1,0 +1,51 @@
+/*
+#root {
+  text-align: center;
+}*/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: beige;
+}
+
+/*
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 30px;
+}*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type=text] {
+  width: 80%;
+}
+
+input[type=email] {
+  width: 80%;
+}
+
+#contact-submit {
+  width: auto;
+  align-self: flex-start;
+}
+
+select {
+  width: auto;
+}
+
+/* Classes */
+.feedback {
+  color: red;
+  font-size: small;
+}
