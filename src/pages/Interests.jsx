@@ -3,7 +3,7 @@ import React from "react";
 const Interests = () => {
     return (
         <main>
-            <h2>Interests</h2>
+            <h2 className="main-head">Interests</h2>
             <p>This is the interests page.</p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 

@@ -1,0 +1,111 @@
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 3fr;
+}
+
+header {
+  /* brown/pink */
+  background-color: rgb(239, 230, 209, 0.7);
+  position: relative;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Roboto Serif', 'serif';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 25px;
+}
+
+nav {
+  /* brown/pink */
+  background-color: rgb(239, 230, 209);
+  padding: 30px;
+  text-align: right;
+}
+
+#navbar {
+  list-style: none;
+}
+
+li {
+  background-color: #A5B4AF;
+  padding: 5px;
+  margin: 5px;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+}
+#navhead {
+  margin-left: 30%;
+}
+.main-head {
+  margin-right: 30%;
+}
+
+main {
+  /* brown/pink */
+  background-color: #A5B4AF;
+  padding: 30px;
+  padding-right: 200px;
+}
+
+footer {
+  /* brown/pink */
+  background-color: #42596A;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  color: white;
+  padding: 30px;
+}
+
+/* mobile layout */
+@media (max-width: 1100px) {
+  #grid-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    position: static;
+    background: linear-gradient(0deg, rgb(254, 237, 227, 0.7), rgb(254, 237, 227, 0.7)), url("/falls.jpg");
+    background-size: cover;
+    min-height: 100%;
+  }
+
+  h1 {
+    position: static;
+  }
+
+  main {
+    padding-right: 25px;
+  }
+
+  nav {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    width: 20%;
+  }
+
+  #navhead {
+    display: none;
+  }
+}

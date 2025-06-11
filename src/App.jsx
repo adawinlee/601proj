@@ -1,23 +1,24 @@
 import { useState } from 'react'
-import './App.css'
+import './css/App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import About from './pages/About'
 import Resume from './pages/Resume'
 import Interests from './pages/Interests'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 function App() {
 	return (
 		<BrowserRouter>
 			<div id="grid-wrapper">
-				<div id="title-container">
+				<header>
 					<h1>Portfolio</h1>
-				</div>
+				</header>
 
 				<div id="empty-div"></div>
 
-				<aside> 
+				<nav> 
 					<h2 id="navhead">Navigation</h2>
 					<ul id="navbar">
 						<li><Link to="/">About</Link></li>
@@ -26,7 +27,7 @@ function App() {
 						<li><Link to="/gallery">Gallery</Link></li>
 						<li><Link to="/contact">Contact</Link></li>
 					</ul>
-				</aside>
+				</nav>
 
 				<Routes>
 					<Route exact path="/" element={<About/>}/>
@@ -34,7 +35,12 @@ function App() {
 					<Route path="/interests" element={<Interests/>}/>
 					<Route path="/gallery" element={<Gallery/>}/>
 					<Route path="/contact" element={<Contact/>}/>
+					<Route path="*" element={<NotFound/>} />
 				</Routes>
+
+				<footer>
+					<p>© 2025 My Portfolio. All rights reserved.</p>
+				</footer>
 			</div>
 		</BrowserRouter>
 	)

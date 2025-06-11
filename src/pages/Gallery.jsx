@@ -3,7 +3,7 @@ import React from "react";
 const Gallery = () => {
     return (
         <main>
-            <h2>Gallery</h2>
+            <h2 className="main-head">Gallery</h2>
             <p>This is the gallery page.</p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
