@@ -29,7 +29,7 @@ function App() {
 			</nav>
 
 			<Routes>
-				<Route exact path="/" element={<About />} />
+				<Route path="/" element={<About />} />
 				<Route path="/resume" element={<Resume />} />
 				<Route path="/interests" element={<Interests />} />
 				<Route path="/gallery" element={<Gallery />} />
