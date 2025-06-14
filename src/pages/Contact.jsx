@@ -1,87 +1,119 @@
-import React, {use, useRef} from "react";
-import '../css/form.css'
+import React, { useState } from 'react';
+import '../css/form.css';
 
-const Contact = () => {
-    //const [formData, setFormData] = useState({name: '', message: ''});
-    const namereg = /^[a-zA-Z]{2,}$/;
-    const mailreg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-    const fNameRef = useRef(null);
-    const lNameRef = useRef(null);
-    const emailRef = useRef(null);
-    const formRef = useRef(null);
-    /*
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
+const namereg = /^[a-zA-Z'"]+[a-zA-Z&()_+\-;':",. ]*$/;
+const emailreg = /\S+@\S+\.\S+/;
+
+function Contact() {
+    const [formData, setFormData] = useState({
+        fName: '',
+        lName: '',
+        email: '',
+        msg: ''
+    });
+    const [errors, setErrors] = useState({});
+
+    // Validation function
+    const validate = (name, value) => {
+        switch (name) {
+            case 'fName':
+                if (!namereg.test(value)) {
+                    return 'Name must be at least one non-numerical character';
+                }
+                break;
+            case 'lName':
+                if (!namereg.test(value)) {
+                    return 'Name must be at least one non-numerical character';
+                }
+                break;
+            case 'email':
+                if (!emailreg.test(value)) {
+                    return 'Email address is invalid';
+                }
+                break;
+            case 'msg':
+                if (value.trim().length === 0) {
+                    return 'Please enter a message to send';
+                }
+            default:
+                return '';
+        }
+    };
+
+    // Handle field change
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        const error = validate(name, value);
+        setFormData(prev => ({ ...prev, [name]: value }));
+        setErrors(prev => ({ ...prev, [name]: error }));
+    };
+
+    // Handle form submission
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        let valid = true;
+        Object.keys(formData).forEach(field => {
+            const error = validate(field, formData[field]);
+            if (error) {
+                setErrors(prev => ({ ...prev, [field]: error }));
+                valid = false;
+            }
         });
-    };*/
-
-    const validate = (fName, lName, email) => {
-        const errors = {};
-        if (!namereg.test(fName)) {
-            errors.fName = 'First name must have at least 2 alphabetical characters';
-        }
-        if (!namereg.test(lName)) {
-            errors.lName = 'Last name must have at least 2 alphabetical characters';
-        }
-        if (!mailreg.test(email)) {
-            errors.email = 'Enter a valid email';
-        }
-        return errors;
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault;
-        //console.log('Form submitted', formData);
-        const fName = fNameRef.current.value;
-        const lName = lNameRef.current.value;
-        const email = emailRef.current.value;
-
-        const errors = validate(fName, lName, email);
-        if (Object.keys(errors).length === 0) {
-            alert('Form is valid and ready to be submitted!');
-            formRef.current.reset();
+        
+        if (valid) {
+            alert('Your message has been received!');
+            // Process the submission here (API call, etc.)
+            // reset form
+            Object.keys(formData).forEach(field => {
+                console.log(formData[field]);
+                setFormData(prev => ({ ...prev, [field]: '' }));
+            })
         }
         else {
-            alert('Errors: ' + JSON.stringify(errors));
+            alert('Please fix any errors before submitting.');
         }
     };
 
     return (
-        <main id="fullpage">
-            <h2 className="main-head">Contact Me</h2>
-            <form ref={formRef} id="web-form">
-                <label htmlFor="first-name">First Name</label>
-                <input type="text" id="first-name" name="first_name" ref={fNameRef}/>
-                <span className="feedback" id="firstErr"></span>
+        <main>
+            <h2 className='main-head'>Contact</h2>
+            <form onSubmit={handleSubmit}>
 
-                <label htmlFor="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last_name" ref={lNameRef}/>
-                <span className="feedback" id="lastErr"></span>
+                <label>First Name: </label>
+                <input
+                    type="text"
+                    name="fName"
+                    value={formData.fName}
+                    onChange={handleChange}
+                />
+                {errors.fName && <p className='feedback'>{errors.fName}</p>}
+                
+                <label>Last Name: </label>
+                <input
+                    type="text"
+                    name="lName"
+                    value={formData.lName}
+                    onChange={handleChange}
+                />
+                {errors.lName && <p className='feedback'>{errors.lName}</p>}
 
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" ref={emailRef}/>
-                <span className="feedback" id="emailErr"></span>
+                <label>Email: </label>
+                <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                />
+                {errors.email && <p className='feedback'>{errors.email}</p>}
 
-                <label>Message</label>
-                <textarea name="message"/>
+                <label>Message: </label>
+                <textarea name="msg" value={formData.msg} onChange={handleChange}></textarea>
+                {errors.msg && <p className='feedback'>{errors.msg}</p>}
 
-                <button type="button" id="contact-submit" onClick={handleSubmit}>Submit</button>
+                <button type="submit" id='submit-button'>Submit</button>
             </form>
         </main>
     );
-
-    /*
-    return (
-        <main>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name"/>
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message"/>
-                <button type="submit">Submit</button>
-            </form>
-        </main>
-    );*/
 }
 
 export default Contact;

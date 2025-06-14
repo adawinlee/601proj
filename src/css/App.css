@@ -1,7 +1,8 @@
 #grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: 2fr 4fr;
+  height: 100vh;
 }
 
 header {
@@ -11,13 +12,14 @@ header {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3em;
+  font-weight: 500;
   font-family: 'Roboto Serif', 'serif';
   position: absolute;
   bottom: 0px;
   right: 0px;
   margin: 25px;
+  text-align: right;
 }
 
 nav {
@@ -29,16 +31,32 @@ nav {
 
 #navbar {
   list-style: none;
+  padding-left: 25px;
 }
 
 li {
   background-color: #A5B4AF;
   padding: 5px;
   margin: 5px;
+  margin-right: 0;
+  font-size: large;
+}
+li:hover {
+  background-color: #6D8792;
+  background-color: rgb(165, 180, 175, 0.8);
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 h2 {
   border-bottom: 1px solid black;
+  font-family: 'Roboto Serif', 'serif';
+  font-size: 1.4em;
+  font-weight: 500;
 }
 #navhead {
   margin-left: 30%;
@@ -64,7 +82,7 @@ footer {
 }
 
 /* mobile layout */
-@media (max-width: 1100px) {
+@media (max-width: 920px) {
   #grid-wrapper {
     display: flex;
     flex-direction: column;
@@ -74,11 +92,11 @@ footer {
     position: static;
     background: linear-gradient(0deg, rgb(254, 237, 227, 0.7), rgb(254, 237, 227, 0.7)), url("/falls.jpg");
     background-size: cover;
-    min-height: 100%;
   }
 
   h1 {
     position: static;
+    text-align: left;
   }
 
   main {
@@ -103,6 +121,8 @@ footer {
 
   li {
     width: 20%;
+    margin-right: 5px;
+    font-size: medium;
   }
 
   #navhead {
