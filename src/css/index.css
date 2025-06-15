@@ -12,12 +12,12 @@ body {
   background-image: url("/cliffs.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #A5B4AF;;
 }
 
 /* link styling */
 a {
-  color: #24313E;
-  text-decoration: inherit;
+  color: #2a70a1;
 }
 a:hover {
   color: white;

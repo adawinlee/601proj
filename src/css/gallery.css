@@ -2,6 +2,9 @@
     max-height: 100px;
     max-width: 100px;
 }
+.gallery-img:hover {
+    border: 2px solid black;
+}
 
 #image-display {
     display: flex;
@@ -25,6 +28,13 @@
     text-align: center;
 }
 
+#desktop {
+    display: block;
+}
+#mobile {
+    display: none;
+}
+
 @media (max-width: 920px) {
     #main-img, .pic-caption {
         display: none;
@@ -32,12 +42,22 @@
 
     #image-display {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         align-items: center;
     }
 
     .gallery-img {
         max-width: 80%;
         max-height: fit-content;
+    }
+    .gallery-img:hover {
+        border: none;
+    }
+
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
     }
 }

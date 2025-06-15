@@ -1,7 +1,7 @@
 #grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 header {
@@ -48,10 +48,19 @@ nav {
   background-color: rgb(165, 180, 175, 0.8);
 }
 
-a {
+li>a {
   display: inline-block;
+  text-decoration: none;
   width: 100%;
   height: 100%;
+  color: #24313E;
+}
+#download {
+  width: fit-content;
+  height: fit-content;
+}
+#download-button {
+  margin-top: 20px;
 }
 
 h2 {
@@ -67,12 +76,17 @@ h2 {
 .main-head {
   margin-right: 30%;
 }
+.in-page {
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
 
 main {
   background-color: #A5B4AF;
   padding: 30px;
   padding-right: 200px;
-  min-height: 60vh;
+  min-height: 65vh;
 }
 
 footer {

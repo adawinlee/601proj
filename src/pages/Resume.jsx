@@ -1,9 +1,13 @@
-import React from "react";
-
 const Resume = () => {
     return (
         <main>
             <h2 className="main-head">Resume</h2>
+            <object data='/601proj/ALee_resume.pdf' type="application/pdf" width="100%" height="500px">
+                <p>Unable to display PDF file. <a href='/601proj/ALee_resume.pdf'>Download</a> instead.</p>
+            </object>
+            <a href='/601proj/ALee_resume.pdf' id="download"><button id="download-button">Download PDF</button></a>
+
+            <h2 className="in-page">Plaintext</h2>
             <article>
                 <h3>Summary</h3>
                 <p>
