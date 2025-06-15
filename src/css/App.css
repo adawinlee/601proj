@@ -1,8 +1,7 @@
 #grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 2fr 4fr;
-  height: 100vh;
+  grid-template-rows: 1fr 3fr;
 }
 
 header {
@@ -13,12 +12,15 @@ header {
 
 h1 {
   font-size: 3em;
-  font-weight: 500;
-  font-family: 'Roboto Serif', 'serif';
+  font-weight: 600;
+  font-family: 'Merriweather', 'Noto Serif', 'serif';
   position: absolute;
   bottom: 0px;
   right: 0px;
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: right;
 }
 
@@ -34,14 +36,14 @@ nav {
   padding-left: 25px;
 }
 
-li {
+.navli {
   background-color: #A5B4AF;
   padding: 5px;
   margin: 5px;
   margin-right: 0;
   font-size: large;
 }
-li:hover {
+.navli:hover {
   background-color: #6D8792;
   background-color: rgb(165, 180, 175, 0.8);
 }
@@ -54,9 +56,10 @@ a {
 
 h2 {
   border-bottom: 1px solid black;
-  font-family: 'Roboto Serif', 'serif';
-  font-size: 1.4em;
+  font-family: 'Merriweather', 'Noto Serif', 'serif';
+  font-size: 1.5em;
   font-weight: 500;
+  margin-top: 10px;
 }
 #navhead {
   margin-left: 30%;
@@ -66,36 +69,19 @@ h2 {
 }
 
 main {
-  /* brown/pink */
   background-color: #A5B4AF;
   padding: 30px;
   padding-right: 200px;
+  min-height: 60vh;
 }
 
 footer {
-  /* brown/pink */
   background-color: #42596A;
   grid-column-start: 1;
   grid-column-end: span 2;
   color: white;
   padding: 30px;
 }
-/*
-main {
-  background-color: rgb(239, 230, 209);
-}
-li {
-  background-color: rgb(239, 230, 209);
-}
-li:hover {
-  background-color: rgb(239, 230, 209, 0.8);
-}
-nav {
-  background-color: rgb(165, 180, 175);
-}
-header {
-  background-color: rgb(165, 180, 175, 0.7);
-}*/
 
 /* mobile layout */
 @media (max-width: 920px) {
@@ -117,6 +103,7 @@ header {
 
   main {
     padding-right: 25px;
+    min-height: 65vh;
   }
 
   nav {
@@ -135,7 +122,7 @@ header {
     margin: 0;
   }
 
-  li {
+  .navli {
     width: 20%;
     margin-right: 5px;
     font-size: medium;

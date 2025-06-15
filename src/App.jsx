@@ -20,20 +20,20 @@ function App() {
 			<nav>
 				<h2 id="navhead">Navigation</h2>
 				<ul id="navbar">
-					<li><Link to="/">About</Link></li>
-					<li><Link to="/resume">Resume</Link></li>
-					<li><Link to="/interests">Interests</Link></li>
-					<li><Link to="/gallery">Gallery</Link></li>
-					<li><Link to="/contact">Contact</Link></li>
+					<li className="navli"><Link to="/601proj/">About</Link></li>
+					<li className="navli"><Link to="/601proj/resume">Resume</Link></li>
+					<li className="navli"><Link to="/601proj/interests">Interests</Link></li>
+					<li className="navli"><Link to="/601proj/gallery">Gallery</Link></li>
+					<li className="navli"><Link to="/601proj/contact">Contact</Link></li>
 				</ul>
 			</nav>
 
 			<Routes>
-				<Route path="/" element={<About />} />
-				<Route path="/resume" element={<Resume />} />
-				<Route path="/interests" element={<Interests />} />
-				<Route path="/gallery" element={<Gallery />} />
-				<Route path="/contact" element={<Contact />} />
+				<Route path="/601proj/" element={<About />} />
+				<Route path="/601proj/resume" element={<Resume />} />
+				<Route path="/601proj/interests" element={<Interests />} />
+				<Route path="/601proj/gallery" element={<Gallery />} />
+				<Route path="/601proj/contact" element={<Contact />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 
