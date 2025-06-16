@@ -1,19 +1,19 @@
-.gallery-img {
+.gallery-gallery-img {
     max-height: 100px;
     max-width: 100px;
 }
-.gallery-img:hover {
+.gallery-gallery-img:hover {
     border: 2px solid black;
 }
 
-#image-display {
+#gallery-image-display {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
 }
 
-#main-img {
+#gallery-main-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -28,36 +28,36 @@
     text-align: center;
 }
 
-#desktop {
+.desktop {
     display: block;
 }
-#mobile {
+.mobile {
     display: none;
 }
 
 @media (max-width: 920px) {
-    #main-img, .pic-caption {
+    #gallery-main-img, .pic-caption {
         display: none;
     }
 
-    #image-display {
+    #gallery-image-display {
         flex-direction: column;
         gap: 15px;
         align-items: center;
     }
 
-    .gallery-img {
-        max-width: 80%;
+    .gallery-gallery-img {
+        max-width: 90%;
         max-height: fit-content;
     }
-    .gallery-img:hover {
+    .gallery-gallery-img:hover {
         border: none;
     }
 
-    #desktop {
+    .desktop {
         display: none;
     }
-    #mobile {
+    .mobile {
         display: block;
     }
 }

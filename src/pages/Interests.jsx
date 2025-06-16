@@ -1,9 +1,6 @@
-import React from "react";
 import '../css/interests.css';
-import ex1 from '/nativity1.png';
-import ex2 from '/nativity2.png';
-import ex3 from '/booklet1.png';
-import ex4 from '/booklet2.png';
+import { ImageDisplay } from "../components/ImageDisplay";
+import designs from '../models/designs.json';
 
 const Interests = () => {
     return (
@@ -14,12 +11,7 @@ const Interests = () => {
                 Because graphic design is a hobby of mine, I have designed flyers and booklet covers for a church, as shown below. 
                 Web development is a combination of things that I have an interest in, which is why I feel like it is a great fit for me.
             </p>
-            <div id="designs-contain">
-                <img src={ex1} className="ex"></img>
-                <img src={ex2} className="ex"></img>
-                <img src={ex3} className="ex"></img>
-                <img src={ex4} className="ex"></img>
-            </div>
+            <ImageDisplay imglist={designs} pagename="interests"/>
 
             <h2 className="in-page">Book List</h2>
             <p>Reading is another hobby of mine. Sci-fi and mystery are my favorite genres. Here is a list of books I have read recently, and what I thought about them.</p>

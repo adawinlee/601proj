@@ -1,0 +1,22 @@
+[
+    {
+        "id": "I1",
+        "image": "nativity1.png",
+        "caption": ""
+    },
+    {
+        "id": "I2",
+        "image": "nativity2.png",
+        "caption": ""
+    },
+    {
+        "id": "I3",
+        "image": "booklet1.png",
+        "caption": ""
+    },
+    {
+        "id": "I4",
+        "image": "booklet2.png",
+        "caption": ""
+    }
+]

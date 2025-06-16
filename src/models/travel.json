@@ -1,0 +1,62 @@
+[
+    {
+        "id": "G1",
+        "image": "seattle1.jpg",
+        "caption": "The view from the Seattle Space Needle, part 1."
+    },
+    {
+        "id": "G2",
+        "image": "seattle2.jpg",
+        "caption": "The view from the Seattle Space Needle, part 2."
+    },
+    {
+        "id": "G3",
+        "image": "ny1.jpg",
+        "caption": "A harbor in New York City."
+    },
+    {
+        "id": "G4",
+        "image": "ny2.jpg",
+        "caption": "The New York City skyline."
+    },
+    {
+        "id": "G5",
+        "image": "jp1.jpg",
+        "caption": "A side street in Tokyo."
+    },
+    {
+        "id": "G6",
+        "image": "jp2.jpg",
+        "caption": "The Golden Pavilion in Kyoto, Japan."
+    },
+    {
+        "id": "G7",
+        "image": "jp3.jpg",
+        "caption": "Taken at the Fushimi Inari Shrine in Kyoto, Japan."
+    },
+    {
+        "id": "G8",
+        "image": "jp4.jpg",
+        "caption": "The sunset while climbing up the Fushimi Inari Shrine."
+    },
+    {
+        "id": "G9",
+        "image": "jp5.jpg",
+        "caption": "The view outside of our hotel in Hakone, Japan."
+    },
+    {
+        "id": "G10",
+        "image": "jp6.jpg",
+        "caption": "This is me wearing a kimono. Going to Japan was my first time traveling outside of the United States."
+    },
+    {
+        "id": "G11",
+        "image": "clifftrees.jpg",
+        "caption": "A cliffside in Yosemite National Park."
+    },
+    {
+        "id": "G12",
+        "image": "falls.jpg",
+        "caption": "A waterfall in Yosemite National Park. Fun fact: the header image for this website was also taken at Yosemite."
+    }
+]
