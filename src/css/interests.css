@@ -18,11 +18,16 @@
     justify-content: center;
 }
 
-.interests-gallery-img {
+.interests-wrapper {
     max-height: 150px;
-    max-width: 150px;
+    max-width: 100px;
 }
-.interests-gallery-img:hover {
+.interests-gallery-img {
+    height: 150px;
+    max-width: 100px;
+    object-fit: cover;
+}
+.interests-wrapper:hover {
     border: 2px solid black;
 }
 
@@ -49,18 +54,20 @@
 
     /* display images in a column and make them unclickable */
     #interests-image-display {
-        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
-    .interests-gallery-img {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 60%;
+    .interests-wrapper {
+        max-width: fit-content;
         max-height: fit-content;
+        text-align: center;
     }
-    .interests-gallery-img:hover {
+    .interests-gallery-img {
+        max-width: 50%;
+        height: fit-content;
+    }
+    .interests-wrapper:hover {
         border: none;
     }
 

@@ -27,13 +27,15 @@ export class ImageDisplay extends React.Component {
                 <div id={this.state.page + "-image-display"}>
                     {
                         e.map( obj => (
-                            <img 
-                                key={obj.id} 
-                                src={obj.image} 
-                                alt={obj.caption}
-                                className={this.state.page + "-gallery-img"}
-                                onClick={this.handleClick}
-                            ></img>
+                            <div key={obj.id} className={this.state.page + "-wrapper"}>
+                                <img 
+                                    src={obj.image} 
+                                    alt={obj.caption}
+                                    className={this.state.page + "-gallery-img"}
+                                    onClick={this.handleClick}
+                                ></img>
+                                <p className="pic-caption mobile">{obj.caption}</p>
+                            </div>
                         ))
                     }
                 </div>
