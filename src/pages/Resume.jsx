@@ -2,10 +2,10 @@ const Resume = () => {
     return (
         <main>
             <h2 className="main-head">Resume</h2>
-            <object data='https://adawinlee.github.io/601proj//ALee_resume.pdf' type="application/pdf" width="100%" height="500px">
+            <object data='/ALee_resume.pdf' type="application/pdf" width="100%" height="500px">
                 <p>Unable to display PDF file. <a href='/ALee_resume.pdf'>Download</a> instead.</p>
             </object>
-            <a href='https://adawinlee.github.io/601proj//ALee_resume.pdf' id="download" download={true}><button id="download-button">Download PDF</button></a>
+            <a href='/ALee_resume.pdf' id="download" download={true}><button id="download-button">Download PDF</button></a>
 
             <h2 className="in-page">Plaintext</h2>
             <article>

@@ -25,13 +25,13 @@ const About = () => {
                     what people can achieve with it, and how it has changed over the years is what drew me to web development. I hope to continue learning more about
                     this interesting topic and making my own advancements as well.
                 </p>
-                <p>My resume can be viewed and downloaded at the <Link to="https://adawinlee.github.io/601proj//resume">Resume</Link> page.</p>
-                <p>If you'd like to know what I do in my free time, check out the <Link to="https://adawinlee.github.io/601proj//interests">Interests</Link> page.</p>
+                <p>My resume can be viewed and downloaded at the <Link to="/resume">Resume</Link> page.</p>
+                <p>If you'd like to know what I do in my free time, check out the <Link to="/interests">Interests</Link> page.</p>
                 <p>
                     I also enjoy visiting new places. This photo of me was taken in front of the Kanda Myojin Shrine in Tokyo, Japan. 
-                    Take a look at the <Link to="https://adawinlee.github.io/601proj//gallery">Gallery</Link> page to see the places I've traveled to recently.
+                    Take a look at the <Link to="/gallery">Gallery</Link> page to see the places I've traveled to recently.
                 </p>
-                <p>To get in touch with me, see the <Link to="https://adawinlee.github.io/601proj//contact">Contact</Link> page.</p>
+                <p>To get in touch with me, see the <Link to="/contact">Contact</Link> page.</p>
             </article>
         </main>
     );
