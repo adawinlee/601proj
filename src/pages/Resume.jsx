@@ -1,11 +1,13 @@
+import resume from '../../public/ALee_resume.pdf'
+
 const Resume = () => {
     return (
         <main>
             <h2 className="main-head">Resume</h2>
-            <object data='/ALee_resume.pdf' type="application/pdf" width="100%" height="500px">
+            <object data={resume} type="application/pdf" width="100%" height="500px">
                 <p>Unable to display PDF file. <a href='/ALee_resume.pdf'>Download</a> instead.</p>
             </object>
-            <a href='/ALee_resume.pdf' id="download" download={true}><button id="download-button">Download PDF</button></a>
+            <a href={resume} id="download" download={true}><button id="download-button">Download PDF</button></a>
 
             <h2 className="in-page">Plaintext</h2>
             <article>
