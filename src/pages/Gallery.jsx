@@ -1,4 +1,3 @@
-import React from "react";
 import { ImageDisplay } from '../components/ImageDisplay';
 import '../css/gallery.css';
 import travel from '../models/travel.json';

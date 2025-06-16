@@ -4,8 +4,8 @@
   grid-template-rows: 1fr 4fr;
 }
 
+/* header styling */
 header {
-  /* brown/pink */
   background-color: rgb(239, 230, 209, 0.7);
   position: relative;
 }
@@ -24,8 +24,8 @@ h1 {
   text-align: right;
 }
 
+/* navigation styling */
 nav {
-  /* brown/pink */
   background-color: rgb(239, 230, 209);
   padding: 30px;
   text-align: right;
@@ -55,6 +55,8 @@ li>a {
   height: 100%;
   color: #24313E;
 }
+
+/* styling for download button on resume page */
 #download {
   width: fit-content;
   height: fit-content;
@@ -63,6 +65,7 @@ li>a {
   margin-top: 20px;
 }
 
+/* styling for main */
 h2 {
   border-bottom: 1px solid black;
   font-family: 'Merriweather', 'Noto Serif', 'serif';
@@ -89,6 +92,7 @@ main {
   min-height: 65vh;
 }
 
+/* footer styling */
 footer {
   background-color: #42596A;
   grid-column-start: 1;
@@ -104,6 +108,7 @@ footer {
     flex-direction: column;
   }
 
+  /* mobile header */
   header {
     position: static;
     background: linear-gradient(0deg, rgb(254, 237, 227, 0.7), rgb(254, 237, 227, 0.7)), url("/falls.jpg");
@@ -115,11 +120,13 @@ footer {
     text-align: left;
   }
 
+  /* mobile main */
   main {
     padding-right: 25px;
     min-height: 65vh;
   }
 
+  /* mobile navigation */
   nav {
     padding: 10px;
     text-align: center;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../css/form.css';
 
 const namereg = /^[a-zA-Z'"]+[a-zA-Z&()_+\-;':",. ]*$/;

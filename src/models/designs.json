@@ -2,21 +2,26 @@
     {
         "id": "I1",
         "image": "nativity1.png",
-        "caption": ""
+        "caption": "A flyer created for a Christmas church event."
     },
     {
         "id": "I2",
         "image": "nativity2.png",
-        "caption": ""
+        "caption": "An alternate version of the Christmas church event flyer."
     },
     {
         "id": "I3",
         "image": "booklet1.png",
-        "caption": ""
+        "caption": "A booklet cover I designed for a church retreat."
     },
     {
         "id": "I4",
         "image": "booklet2.png",
-        "caption": ""
+        "caption": "A booklet cover I designed for a church summer camp."
+    },
+    {
+        "id": "I5",
+        "image": "zaha_hadid.jpg",
+        "caption": "A poster I made for a biography project about an important figure in architecture."
     }
 ]

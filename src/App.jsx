@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './css/App.css'
 import { Routes, Route, Link } from 'react-router-dom'
 import About from './pages/About'
@@ -6,7 +5,6 @@ import Resume from './pages/Resume'
 import Interests from './pages/Interests'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
-import NotFound from './pages/NotFound'
 
 function App() {
 	return (
@@ -34,7 +32,11 @@ function App() {
 				<Route path="/601proj/interests" element={<Interests />} />
 				<Route path="/601proj/gallery" element={<Gallery />} />
 				<Route path="/601proj/contact" element={<Contact />} />
-				<Route path="*" element={<NotFound />} />
+				<Route path="*" element={
+					<main>
+            			<h2 className="main-head">Sorry!</h2>
+            			<p>This page does not exist.</p>
+        			</main>} />
 			</Routes>
 
 			<footer>

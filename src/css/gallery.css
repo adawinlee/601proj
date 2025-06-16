@@ -1,3 +1,28 @@
+#gallery-main {
+    padding-right: 30px;
+}
+
+/* styling for main image (big display image) */
+#gallery-main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* picture caption for the main image */
+.pic-caption {
+    text-align: center;
+}
+
+/* image display (the small clickable images) */
+#gallery-image-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
 .gallery-gallery-img {
     max-height: 100px;
     max-width: 100px;
@@ -6,28 +31,7 @@
     border: 2px solid black;
 }
 
-#gallery-image-display {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-}
-
-#gallery-main-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-
-#gallery-main {
-    padding-right: 30px;
-}
-
-.pic-caption {
-    text-align: center;
-}
-
+/* class for things to hide/show depending on mobile/desktop */
 .desktop {
     display: block;
 }
@@ -36,10 +40,12 @@
 }
 
 @media (max-width: 920px) {
+    /* hide big main image and its caption on mobile */
     #gallery-main-img, .pic-caption {
         display: none;
     }
 
+    /* display gallery images in a column and make them unclickable */
     #gallery-image-display {
         flex-direction: column;
         gap: 15px;

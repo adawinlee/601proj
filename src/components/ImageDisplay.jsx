@@ -1,4 +1,4 @@
-import React, {setState} from "react";
+import React from "react";
 
 export class ImageDisplay extends React.Component {
     constructor(props) {

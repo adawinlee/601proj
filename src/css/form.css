@@ -5,19 +5,20 @@ form {
   width: 80%;
 }
 
+/* expand form to fill screen width on mobile */
 @media (max-width: 920px) {
   form {
     width: 100%;
   }
 }
 
-textarea {
-  min-height: 100px;
+input, textarea {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#contact-submit {
-  width: auto;
-  align-self: flex-start;
+textarea {
+  min-height: 100px;
 }
 
 .feedback {
@@ -33,9 +34,4 @@ textarea {
 #submit-button {
   width: fit-content;
   margin-top: 15px;
-}
-
-input, textarea {
-  font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
 }

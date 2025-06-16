@@ -1,8 +1,21 @@
+#int-main {
+    padding-right: 30px;
+}
+
+/* styling for main image (big display image) */
 #interests-main-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+}
+
+/* image display (the small clickable images) */
+#interests-image-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }
 
 .interests-gallery-img {
@@ -13,13 +26,7 @@
     border: 2px solid black;
 }
 
-#interests-image-display {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-}
-
+/* styling for book grid */
 #book-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -27,10 +34,6 @@
 }
 
 .book-cover {
-    /*
-    display: block;
-    margin-left: auto;
-    margin-right: auto;*/
     height: 300px;
 }
 
@@ -38,35 +41,36 @@
     padding: 10px;
 }
 
-#int-main {
-    padding-right: 30px;
-}
-
 @media (max-width: 920px) {
-    #book-grid {
-        grid-template-columns: auto auto;
-    }
-
+    /* hide big main image and its caption on mobile */
     #interests-main-img, .pic-caption {
         display: none;
     }
 
+    /* display images in a column and make them unclickable */
     #interests-image-display {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        display: flex;
+        flex-direction: column;
         gap: 10px;
     }
 
     .interests-gallery-img {
-        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 60%;
         max-height: fit-content;
     }
     .interests-gallery-img:hover {
         border: none;
     }
+
+    /* change book grid to 2 columns instead of 3 */
+    #book-grid {
+        grid-template-columns: auto auto;
+    }
 }
 
+/* for very small screens, display the books in a column instead of a grid */
 @media (max-width: 500px) {
     #book-grid {
         display: flex;
