@@ -32,7 +32,7 @@ function App() {
 				<Route path="/601proj/interests" element={<Interests />} />
 				<Route path="/601proj/gallery" element={<Gallery />} />
 				<Route path="/601proj/contact" element={<Contact />} />
-				<Route path="/601proj/*" element={
+				<Route path="*" element={
 					<main>
             			<h2 className="main-head">Sorry!</h2>
             			<p>This page does not exist.</p>

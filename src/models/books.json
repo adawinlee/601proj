@@ -1,0 +1,62 @@
+[
+    {
+        "id": "B1",
+        "title": "The Murderbot Diaries",
+        "series": "series",
+        "author": "Martha Wells",
+        "image": "https://www.marthawells.com/Murderbot1.jpg",
+        "cover": "All Systems Red",
+        "review": "Currently my favorite book series. Murderbot is such a great character, and the way the story is told through its perspective is so unique.",
+        "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "id": "B2",
+        "title": "The Sworn Soldier",
+        "series": "series",
+        "author": "T. Kingfisher",
+        "image": "https://m.media-amazon.com/images/I/81BAA6IwKEL._SL1500_.jpg",
+        "cover": "What Moves the Dead",
+        "review": "I never understood what \"cozy horror\" was until I read this series. Haunting but oddly comforting at the same time.",
+        "rating": "⭐⭐⭐"
+    },
+    {
+        "id": "B3",
+        "title": "The Locked Tomb",
+        "series": "series",
+        "author": "Tamsyn Muir",
+        "image": "https://elitistbookreviews.com/wp-content/uploads/2020/03/Gideon-the-Ninth.jpg",
+        "cover": "Gideon the Ninth",
+        "review": "Manages to combine sci-fi and fantasy with amazing world-building. Excited for the next book!",
+        "rating": "⭐⭐⭐⭐"
+    },
+    {
+        "id": "B4",
+        "title": "The Space Between Worlds",
+        "series": "",
+        "author": "Micaiah Johnson",
+        "image": "https://utopia-state-of-mind.com/wp-content/uploads/2020/07/The-Space-Between-Worlds-by-Micaiah-Johnson.jpg",
+        "cover": "The Space Between Worlds",
+        "review": "Such an original take on the idea of parallel universes and alternate selves.",
+        "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "id": "B5",
+        "title": "Mexican Gothic",
+        "series": "",
+        "author": "Silvia Moreno-Garcia",
+        "image": "https://media.npr.org/assets/img/2020/07/09/91kikzx6cdl_custom-f0b2be087ea32e8694f07a7984831181275356f9-s1100-c50.jpg",
+        "cover": "Mexican Gothic",
+        "review": "The creepy atmosphere of this book is unmatched. Had me on the edge of my seat the entire time.",
+        "rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+        "id": "B6",
+        "title": "Ancillary Justice",
+        "series": "",
+        "author": "Ann Leckie",
+        "image": "https://i1.wp.com/geekylibrary.com/files/2014/03/ancillaryjusticecover2.jpg?fit=948%2C1422",
+        "cover": "Ancillary Justice",
+        "review": "The book uses its sci-fi setting to the fullest. Definitely want to read the whole series some time.",
+        "rating": "⭐⭐⭐⭐"
+    }
+]
