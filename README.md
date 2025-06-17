@@ -23,6 +23,8 @@ contains the additional components used, ImageDisplay and BookList. The models
 folder contains some JSON files that are used in the components, and the css
 folder contains CSS files for the site.
 
+Link to my video walkthrough of this project: https://youtu.be/ChnwQUqCRSg
+
 ## Pages
 
 ### About
