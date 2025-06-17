@@ -62,7 +62,6 @@ function Contact() {
         
         if (valid) {
             alert('Your message has been received!');
-            // Process the submission here (API call, etc.)
             // reset form
             Object.keys(formData).forEach(field => {
                 console.log(formData[field]);

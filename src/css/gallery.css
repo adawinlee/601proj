@@ -34,6 +34,7 @@
 }
 .gallery-wrapper:hover {
     border: 2px solid black;
+    cursor: pointer;
 }
 
 /* class for things to hide/show depending on mobile/desktop */
@@ -67,6 +68,7 @@
     }
     .gallery-wrapper:hover {
         border: none;
+        cursor: auto;
     }
 
     /* class for things to hide/show depending on mobile/desktop */

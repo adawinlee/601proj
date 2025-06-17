@@ -29,6 +29,7 @@
 }
 .interests-wrapper:hover {
     border: 2px solid black;
+    cursor: pointer;
 }
 
 /* styling for book grid */
@@ -69,6 +70,7 @@
     }
     .interests-wrapper:hover {
         border: none;
+        cursor: auto;
     }
 
     /* change book grid to 2 columns instead of 3 */

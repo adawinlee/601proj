@@ -13,7 +13,7 @@ export class BookList extends React.Component {
             <div id="book-grid">
             {
                 e.map( obj => (
-                    <div className="book">
+                    <div key={obj.id} className="book">
                         <img 
                             src={obj.image} 
                             alt={"Book cover of " + obj.cover + "."} 
