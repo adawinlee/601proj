@@ -2,6 +2,7 @@ const Resume = () => {
     return (
         <main>
             <h2 className="main-head">Resume</h2>
+            <a href='/601proj/ALee_resume.pdf' id="download" download={true}><button id="download-button">Download PDF</button></a>
             <article>
                 <h3>Summary</h3>
                 <p>
